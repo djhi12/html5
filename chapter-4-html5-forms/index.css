@@ -1,3 +1,9 @@
-input:required {
+/* input:required {
     background: red;
+} */
+
+label[for="register-name"]::after {
+    content: "*";
+    color: red;
+    /* float: right; */
 }
