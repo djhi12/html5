@@ -31,12 +31,13 @@
                 </li>
                 <li>
                     <label for="url">My website is located at :</label>
-                    <input type="text" id="url" name="url">
+                    <input type="text" id="url" name="url" placeholder="e.g. http://example.com">
                 </li>
                 <li>
                     <label for="password">I would like my password to be:</label>
                     <p>(at least 6 characters, no spaces)</p>
-                    <input type="password" id="password" name="password">
+                    <input type="password" id="password" name="password" title="(at least 6 characters, no spaces)" 
+                    pattern="\S{6,}">
                 </li>
                 <li>
                     <label for="rating">On the scale of 1 to 10, my knowldege of HTML5 is:</label>
