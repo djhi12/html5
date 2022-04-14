@@ -4,22 +4,19 @@
     <title>JavaScript getElementsByTagName() Demo</title>
 </head>
 <body>
-    <h1>JavaScript getElementsByTagName() Demo</h1>
-    <h2>First heading</h2>
-    <p>This is the first paragraph.</p>
-    <h2>Second heading</h2>
-    <p>This is the second paragraph.</p>
-    <h2>Third heading</h2>
-    <p>This is the third paragraph.</p>
-
-    <button id="btnCount">Count H2</button>
+   
+    <video controls>
+        <source>
+    </video>
 
     <script>
-        let btn = document.getElementById('btnCount');
-        btn.addEventListener('click', () => {
-            let headings = document.getElementsByTagName('h2');
-            alert(`The number of H2 tags: ${headings.length}`);
-        });
+       const video = document.querySelector('video');
+
+video.addEventListener('loadedmetadata', (event) => {
+  console.log('The duration and dimensions ' + 'of the media and tracks are now known. ');
+});
+
+console.log(video);
     </script>
 </body>
 
