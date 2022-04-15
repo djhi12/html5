@@ -1,22 +1,21 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>JavaScript getElementsByTagName() Demo</title>
 </head>
+
 <body>
-   
-    <video controls>
-        <source>
+
+    <video width="320" height="240" controls>
+        <source src="forrest_gump.mp4" type="video/mp4">
+        <source src="forrest_gump.ogg" type="video/ogg">
+        <track src="fgsubtitles_en.vtt" kind="subtitles" srclang="en" label="English">
+        <track src="fgsubtitles_no.vtt" kind="subtitles" srclang="no" label="Norwegian">
     </video>
 
     <script>
-       const video = document.querySelector('video');
 
-video.addEventListener('loadedmetadata', (event) => {
-  console.log('The duration and dimensions ' + 'of the media and tracks are now known. ');
-});
-
-console.log(video);
     </script>
 </body>
 
