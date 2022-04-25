@@ -1,0 +1,13 @@
+.ad4 {
+    position: relative;
+}
+
+.no-geolocation .ad4 {
+    display: none;
+}
+
+.ad4 h1 {
+    font-size: 20px;
+    /* font-family: Ackno; */
+    text-align: center;
+}

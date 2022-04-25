@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display on Map</title>
+</head>
+<body>
+    
+
+    <script>
+        function displayOnMap(position) {
+            const latitude = position.coords.latitude;
+            const longitude = position.coords.longitude;
+            // Let's use Google Maps to display the location
+
+            const exactLocation = latitude + longitude;
+            console.log(exactLocation);
+        }
+
+        console.log("The code is working!");
+    </script>
+
+    <!-- Google Map APIs -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=API_KEY"></script>
+</body>
+</html>
